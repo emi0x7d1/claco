@@ -1,0 +1,20 @@
+[package]
+name = "claco-sdk"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+claco-termulator = { path = "../claco-termulator" }
+tokio = { version = "1", features = ["full"] }
+serde = { version = "1", features = ["derive"] }
+serde_json = "1.0"
+libc = "0.2"
+futures = "0.3"
+tokio-stream = "0.1"
+regex = "1"
+async-stream = "0.3.6"
+dirs = "6.0.0"
+
+[features]
+default = []
+tui-parsing = []

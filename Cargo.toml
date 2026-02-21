@@ -1,0 +1,10 @@
+[workspace]
+members = [
+    "claco-sdk",
+    "claco-pty",
+    "claco-rec",
+    "claco-termulator",
+    "claco-acp-agent",
+]
+exclude = ["zed-claco"]
+resolver = "2"

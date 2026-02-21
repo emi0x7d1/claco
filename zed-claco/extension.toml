@@ -1,0 +1,15 @@
+id = "claco"
+name = "Claco"
+version = "0.2.1"
+schema_version = 1
+authors = ["emi0x7d1"]
+description = "Recording and Replaying with Claco"
+repository = "https://github.com/emi0x7d1/session-recorder"
+
+[agent_servers.claco]
+name = "Claco Agent"
+icon = "assets/claco.svg"
+
+[agent_servers.claco.targets.darwin-aarch64]
+archive = "http://localhost:8003/claco-agent-darwin-aarch64.tar.gz"
+cmd = "./wrapper.sh"
